@@ -1,6 +1,5 @@
 import streamlit as st
 import base64
-import webbrowser
 
 # 배경 이미지 설정 함수
 def set_background(png_file):
@@ -32,38 +31,26 @@ st.markdown("""
         text-align: center;
         color: red;
     }
-    </style>
-""", unsafe_allow_html=True)
-
-st.markdown("<h1 class='title-text'>CuPT - 대학생 소개팅 도우미</h1>", unsafe_allow_html=True)
-st.markdown("""
-<div class='main-text'>
-    <p>대학생을 위한 최고의 소개팅 서비스</p>
-    <p>프로필 매칭 서비스, 매력적인 프로필 만들기, 그리고 소개팅 도우미까지!</p>
-</div>
-""", unsafe_allow_html=True)
-
-# 스타일을 위한 CSS
-st.markdown("""
-    <style>
-    .stButton>button {
-        border: 2px solid #4CAF50;
-        color: white;
-        background-color: #4CAF50;
+    .custom-button {
+        display: inline-block;
         padding: 15px 32px;
+        font-size: 16px;
+        cursor: pointer;
         text-align: center;
         text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
+        outline: none;
+        color: white;
+        background-color: #4CAF50;
+        border: none;
         border-radius: 12px;
-        margin: 10px auto;
-        cursor: pointer;
-        transition-duration: 0.4s;
+        box-shadow: 0 9px #999;
+        margin: 10px;
     }
-    .stButton>button:hover {
-        background-color: white;
-        color: black;
-        border: 2px solid #4CAF50;
+    .custom-button:hover {background-color: #3e8e41}
+    .custom-button:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
     }
     .centered-buttons {
         display: flex;
@@ -75,16 +62,21 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
+st.markdown("<h1 class='title-text'>CuPT - 대학생 소개팅 도우미</h1>", unsafe_allow_html=True)
+st.markdown("""
+<div class='main-text'>
+    <p>대학생을 위한 최고의 소개팅 서비스</p>
+    <p>프로필 매칭 서비스, 매력적인 프로필 만들기, 그리고 소개팅 도우미까지!</p>
+</div>
+""", unsafe_allow_html=True)
+
 # 버튼 중앙 정렬을 위한 컨테이너
 st.markdown("<div class='centered-buttons'>", unsafe_allow_html=True)
 
-# 각 버튼에 대한 클릭 이벤트 설정
-if st.button('프로필 매칭 서비스'):
-    webbrowser.open_new_tab('https://searchkeyword1.streamlit.app/')
-if st.button('매력적인 프로필 만들기'):
-    webbrowser.open_new_tab('https://generateprofile.streamlit.app/')
-if st.button('소개팅 도우미'):
-    webbrowser.open_new_tab('https://assistanttt.streamlit.app/')
+# 각 버튼에 대한 HTML 링크 설정
+st.markdown('<a href="https://searchkeyword1.streamlit.app/" target="_blank" class="custom-button">프로필 매칭 서비스</a>', unsafe_allow_html=True)
+st.markdown('<a href="https://generateprofile.streamlit.app/" target="_blank" class="custom-button">매력적인 프로필 만들기</a>', unsafe_allow_html=True)
+st.markdown('<a href="https://assistanttt.streamlit.app/" target="_blank" class="custom-button">소개팅 도우미</a>', unsafe_allow_html=True)
 
 st.markdown("</div>", unsafe_allow_html=True)
 

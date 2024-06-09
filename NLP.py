@@ -9,7 +9,7 @@ def set_background(png_file):
     <style>
     .stApp {{
         background-image: url("data:image/png;base64,{bin_str}");
-        background-size: 35%;
+        background-size: 60%;
         background-position: center;
         background-repeat: no-repeat;
     }}

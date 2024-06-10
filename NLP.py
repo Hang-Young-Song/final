@@ -24,7 +24,7 @@ with open("cupt.png", "rb") as image_file:
 # 페이지 제목과 설명
 st.markdown("""
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Pen+Script&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Pen+Script&family=Single+Day&display=swap');
     
     .title-text {
         text-align: center;
@@ -37,13 +37,14 @@ st.markdown("""
         text-align: center;
         color: black;
         font-family: 'Nanum Pen Script', cursive;
-        font-size: 64px;
+        font-size: 80px;
         font-weight: 600;
     }
     .custom-button {
         display: inline-block;
         padding: 15px 32px;
         font-size: 16px;
+        font-family: 'Single Day', cursive;
         cursor: pointer;
         text-align: center;
         text-decoration: none;

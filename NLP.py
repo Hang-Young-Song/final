@@ -37,7 +37,7 @@ st.markdown("""
         text-align: center;
         color: black;
         font-family: 'Nanum Pen Script', cursive;
-        font-size: 48px;
+        font-size: 64px;
         font-weight: 600;
     }
     .custom-button {

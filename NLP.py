@@ -17,7 +17,7 @@ def set_background(png_file):
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
 # 배경 이미지 불러오기
-with open("CuPT.png", "rb") as image_file:
+with open("cupt.png", "rb") as image_file:
     set_background(image_file)
 
 # 페이지 제목과 설명

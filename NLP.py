@@ -104,6 +104,7 @@ with cols[2]:
 # Footer
 st.markdown("""
     <div style='text-align: center; margin-top: 50px; color: black;'>
+    ' '
         <h4 style = "font-family: 'Nanum Pen Script', cursive;">CuPT - 당신의 사랑을 응원합니다!</h4>
         <p>© 2024 CuPT. All rights reserved.</p>
     </div>

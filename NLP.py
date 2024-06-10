@@ -8,9 +8,10 @@ def set_background(png_file):
     <style>
     .stApp {{
         background-image: url("data:image/png;base64,{bin_str}");
-        background-size: 55%;
+        background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        background-attachment: fixed;
     }}
     </style>
     '''
@@ -70,15 +71,19 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-# 버튼 중앙 정렬을 위한 컨테이너
-st.markdown("<div class='centered-buttons'>", unsafe_allow_html=True)
+# 버튼을 가로로 정렬하기 위해 Streamlit 컨테이너와 컬럼 사용
+st.write("")
+st.write("")
+cols = st.columns([1, 1, 1])
 
-# 각 버튼에 대한 HTML 링크 설정
-st.markdown('<a href="https://generateprofile.streamlit.app/" target="_blank" class="custom-button">매력적인 프로필 만들기</a>', unsafe_allow_html=True)
-st.markdown('<a href="https://searchkeyword1.streamlit.app/" target="_blank" class="custom-button">프로필 매칭 서비스</a>', unsafe_allow_html=True)
-st.markdown('<a href="https://assistanttt.streamlit.app/" target="_blank" class="custom-button">소개팅 도우미</a>', unsafe_allow_html=True)
+with cols[0]:
+    st.markdown('<a href="https://generateprofile.streamlit.app/" target="_blank" class="custom-button">매력적인 프로필 만들기</a>', unsafe_allow_html=True)
 
-st.markdown("</div>", unsafe_allow_html=True)
+with cols[1]:
+    st.markdown('<a href="https://searchkeyword1.streamlit.app/" target="_blank" class="custom-button">프로필 매칭 서비스</a>', unsafe_allow_html=True)
+
+with cols[2]:
+    st.markdown('<a href="https://assistanttt.streamlit.app/" target="_blank" class="custom-button">소개팅 도우미</a>', unsafe_allow_html=True)
 
 # Footer
 st.markdown("""

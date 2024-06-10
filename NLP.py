@@ -37,8 +37,8 @@ st.markdown("""
         text-align: center;
         color: black;
         font-family: 'Nanum Pen Script', cursive;
-        font-size: 36px;
-        font-weight: 400;
+        font-size: 48px;
+        font-weight: 600;
     }
     .custom-button {
         display: inline-block;
@@ -54,7 +54,7 @@ st.markdown("""
         border-radius: 50px;
         box-shadow: 0 9px #999;
         margin: 10px;
-        font-family: 'Single Day', cursive;
+        font-family: 'Dongle', cursive;
         font-weight: 400;
     }
     .custom-button:hover {background-color: #ff69b4}

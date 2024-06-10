@@ -27,6 +27,8 @@ st.markdown("""
     .title-text {
         text-align: center;
         color: black;
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: 700
     }
     .main-text {
         text-align: center;

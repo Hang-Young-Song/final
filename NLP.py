@@ -24,17 +24,19 @@ with open("cupt.png", "rb") as image_file:
 # 페이지 제목과 설명
 st.markdown("""
     <style>
+    @import url('https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Pen+Script&display=swap');
+    
     .title-text {
         text-align: center;
         color: black;
-        font-family: 'Caveat', cursive;
+        font-family: 'Jua', sans-serif;
         font-size: 48px;
         font-weight: 700
     }
     .main-text {
         text-align: center;
         color: black;
-        font-family: 'Dancing Script', cursive;
+        font-family: 'Nanum Pen Script', cursive;
         font-size: 24px;
         font-weight: 400;
     }
@@ -52,7 +54,7 @@ st.markdown("""
         border-radius: 50px;
         box-shadow: 0 9px #999;
         margin: 10px;
-        font-family: 'Dancing Script', cursive;
+        font-family: 'Nanum Pen Script', cursive;
         font-weight: 700;
     }
     .custom-button:hover {background-color: #ff69b4}

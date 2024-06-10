@@ -62,7 +62,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-st.markdown("<h1 class='title-text'>CuPT - 대학생 소개팅 도우미</h1>", unsafe_allow_html=True)
+st.markdown("<h1 class='title-text'>CuPT - 대학생 소개팅 도우미^______^</h1>", unsafe_allow_html=True)
 st.markdown("""
 <div class='main-text'>
     <p>대학생을 위한 최고의 소개팅 서비스</p>

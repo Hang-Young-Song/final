@@ -40,7 +40,7 @@ st.markdown("""
         text-align: center;
         text-decoration: none;
         outline: none;
-        color: white;
+        color: black;
         background-color: pink;
         border: none;
         border-radius: 50px;
@@ -67,7 +67,7 @@ st.markdown("<h1 class='title-text'>CuPT - 대학생 소개팅 도우미</h1>", 
 st.markdown("""
 <div class='main-text'>
     <p>대학생을 위한 최고의 소개팅 서비스</p>
-    <p>매력적인 프로필 만들기, 프로필 매칭 서비스, 그리고 소개팅 도우미까지!</p>
+    <p>매력적인 프로필 만들기, 프로필 매칭 서비스, 그리고 실시간 소개팅 코칭까지!</p>
 </div>
 """, unsafe_allow_html=True)
 
@@ -77,13 +77,13 @@ st.write("")
 cols = st.columns([1, 1, 1])
 
 with cols[0]:
-    st.markdown('<a href="https://generateprofile.streamlit.app/" target="_blank" class="custom-button">매력적인 프로필 만들기</a>', unsafe_allow_html=True)
+    st.markdown('<a href="https://generateprofile.streamlit.app/" target="_blank" class="custom-button">프로필 만들기</a>', unsafe_allow_html=True)
 
 with cols[1]:
-    st.markdown('<a href="https://searchkeyword1.streamlit.app/" target="_blank" class="custom-button">프로필 매칭 서비스</a>', unsafe_allow_html=True)
+    st.markdown('<a href="https://searchkeyword1.streamlit.app/" target="_blank" class="custom-button">프로필 매칭</a>', unsafe_allow_html=True)
 
 with cols[2]:
-    st.markdown('<a href="https://assistanttt.streamlit.app/" target="_blank" class="custom-button">소개팅 도우미</a>', unsafe_allow_html=True)
+    st.markdown('<a href="https://assistanttt.streamlit.app/" target="_blank" class="custom-button">소개팅 코칭</a>', unsafe_allow_html=True)
 
 # Footer
 st.markdown("""

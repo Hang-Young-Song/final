@@ -37,8 +37,8 @@ st.markdown("""
         text-align: center;
         color: black;
         font-family: 'Nanum Pen Script', cursive;
-        font-size: 80px;
-        font-weight: 700;
+        font-size: 18px;
+        font-weight: 50;
     }
     .custom-button {
         display: inline-block;

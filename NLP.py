@@ -40,15 +40,15 @@ st.markdown("""
         text-decoration: none;
         outline: none;
         color: white;
-        background-color: #4CAF50;
+        background-color: pink;
         border: none;
-        border-radius: 12px;
+        border-radius: 50px;
         box-shadow: 0 9px #999;
         margin: 10px;
     }
-    .custom-button:hover {background-color: #3e8e41}
+    .custom-button:hover {background-color: #ff69b4}
     .custom-button:active {
-        background-color: #3e8e41;
+        background-color: #ff69b4;
         box-shadow: 0 5px #666;
         transform: translateY(4px);
     }
@@ -57,7 +57,7 @@ st.markdown("""
         justify-content: center;
         align-items: center;
         margin-top: 20px;
-        flex-direction: column;
+        flex-direction: row;
     }
     </style>
 """, unsafe_allow_html=True)

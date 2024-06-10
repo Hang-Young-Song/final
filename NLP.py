@@ -25,11 +25,11 @@ st.markdown("""
     <style>
     .title-text {
         text-align: center;
-        color: blue;
+        color: black;
     }
     .main-text {
         text-align: center;
-        color: red;
+        color: black;
     }
     .custom-button {
         display: inline-block;

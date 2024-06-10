@@ -54,8 +54,6 @@ st.markdown("""
         border-radius: 50px;
         box-shadow: 0 9px #999;
         margin: 10px;
-        font-family: 'Dongle', cursive;
-        font-weight: 400;
     }
     .custom-button:hover {background-color: #ff69b4}
     .custom-button:active {

@@ -55,7 +55,7 @@ st.markdown("""
         box-shadow: 0 9px #999;
         margin: 10px;
         font-family: 'Single Day', cursive;
-        font-weight: 700;
+        font-weight: 400;
     }
     .custom-button:hover {background-color: #ff69b4}
     .custom-button:active {
@@ -69,6 +69,13 @@ st.markdown("""
         align-items: center;
         margin-top: 20px;
         flex-direction: row;
+    }
+    .footer-text {
+        text-align: center;
+        color: black;
+        font-family: 'Single Day', cursive;
+        font-size: 18px; /* 폰트 크기를 하단 텍스트에 맞게 설정 */
+        margin-top: 50px;
     }
     </style>
 """, unsafe_allow_html=True)

@@ -27,12 +27,16 @@ st.markdown("""
     .title-text {
         text-align: center;
         color: black;
-        font-family: 'Noto Sans', sans-serif;
+        font-family: 'Caveat', cursive;
+        font-size: 48px;
         font-weight: 700
     }
     .main-text {
         text-align: center;
         color: black;
+        font-family: 'Dancing Script', cursive;
+        font-size: 24px;
+        font-weight: 400;
     }
     .custom-button {
         display: inline-block;
@@ -48,6 +52,8 @@ st.markdown("""
         border-radius: 50px;
         box-shadow: 0 9px #999;
         margin: 10px;
+        font-family: 'Dancing Script', cursive;
+        font-weight: 700;
     }
     .custom-button:hover {background-color: #ff69b4}
     .custom-button:active {

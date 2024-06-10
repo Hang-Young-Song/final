@@ -31,7 +31,7 @@ st.markdown("""
         color: black;
         font-family: 'Jua', sans-serif;
         font-size: 48px;
-        font-weight: 700
+        font-weight: 700;
     }
     .main-text {
         text-align: center;
@@ -73,13 +73,15 @@ st.markdown("""
         text-align: center;
         color: black;
         font-family: 'Single Day', cursive;
-        font-size: 18px; /* 폰트 크기를 하단 텍스트에 맞게 설정 */
+        font-size: 18px; /* 하단 텍스트의 폰트 크기 */
         margin-top: 50px;
     }
     </style>
 """, unsafe_allow_html=True)
 
+# 제목 변경된 부분
 st.markdown("<h1 class='title-text'>CuPT - 대학생 소개팅 코칭 시스템</h1>", unsafe_allow_html=True)
+
 st.markdown("""
 <div class='main-text'>
     <p>대학생을 위한 최고의 소개팅 서비스</p>
@@ -101,11 +103,11 @@ with cols[1]:
 with cols[2]:
     st.markdown('<a href="https://assistanttt.streamlit.app/" target="_blank" class="custom-button">소개팅 코칭</a>', unsafe_allow_html=True)
 
-# Footer
+# 하단 텍스트
 st.markdown("""
     <div style='text-align: center; margin-top: 50px; color: black;'>
-    CuPT
-        <h4 style = "font-family: 'Nanum Pen Script', cursive;">당신의 사랑을 응원합니다!</h4>
+        CuPT
+        <h4 style="font-family: 'Nanum Pen Script', cursive;">당신의 사랑을 응원합니다!</h4>
         <p>© 2024 CuPT. All rights reserved.</p>
     </div>
 """, unsafe_allow_html=True)
